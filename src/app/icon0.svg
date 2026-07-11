@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(0.9478672985781991,0,0,0.9478672985781991,0,132.22748815165875)"><svg xmlns="http://www.w3.org/2000/svg" width="1055" height="776" viewBox="0 0 1055 776" fill="none"><path d="M826.212 532.075C826.212 558.074 805.136 579.15 779.137 579.15C753.139 579.15 732.062 558.074 732.062 532.075C732.062 506.076 753.139 485 779.137 485C805.136 485 826.212 506.076 826.212 532.075Z" fill="#33312E"></path><path d="M548.063 379L348.275 578.768H109L548.063 140V379Z" fill="#33312E"></path><path d="M826.06 379L626.249 578.768H386.948L826.06 140V379Z" fill="#33312E"></path></svg></g></g></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(0.9478672985781991,0,0,0.9478672985781991,0,132.22748815165875)"><svg xmlns="http://www.w3.org/2000/svg" width="1055" height="776" viewBox="0 0 1055 776" fill="none"><path d="M826.212 532.075C826.212 558.074 805.136 579.15 779.137 579.15C753.139 579.15 732.062 558.074 732.062 532.075C732.062 506.076 753.139 485 779.137 485C805.136 485 826.212 506.076 826.212 532.075Z" fill="#F0EEE9"></path><path d="M548.063 379L348.275 578.768H109L548.063 140V379Z" fill="#F0EEE9"></path><path d="M826.06 379L626.249 578.768H386.948L826.06 140V379Z" fill="#F0EEE9"></path></svg></g></g></svg></g></svg>
