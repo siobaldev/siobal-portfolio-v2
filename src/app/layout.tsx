@@ -6,12 +6,12 @@ const martianGrotesk = localFont({
   src: [
     {
       path: "../../public/fonts/MartianGrotesk-Regular.woff2",
-      weight: "500",
+      weight: "400",
       style: "normal",
     },
     {
       path: "../../public/fonts/MartianGrotesk-Medium.woff2",
-      weight: "600",
+      weight: "500",
       style: "normal",
     },
     {
