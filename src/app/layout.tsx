@@ -81,7 +81,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${martianGrotesk.variable} font-martian h-full antialiased`}
+      className={`${martianGrotesk.variable} font-martian h-full bg-background text-foreground antialiased`}
     >
       <head>
         <meta name="apple-mobile-web-app-title" content="siobaldev" />
