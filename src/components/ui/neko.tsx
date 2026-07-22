@@ -68,6 +68,12 @@ export default function Neko() {
       />
       <HangingCat
         tabIndex={0}
+        role="button"
+        aria-label={
+          isNekoVisible
+            ? "Hide Neko cursor companion"
+            : "Show Neko cursor companion"
+        }
         className={`focus absolute top-4.5 right-1 w-fit cursor-pointer transition-colors duration-200 ${
           isNekoVisible ? "text-black dark:text-white" : "text-foreground"
         }`}
