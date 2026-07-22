@@ -3,23 +3,44 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-martian: var(--font-martian-grotesk);
+  --font-martian: var(--font-martian-grotesk);
 
-    --color-indicator: oklch(0.7532 0.1748 158.03);
-    --color-border: oklch(0.4863 0.0187 103.17);
+  --text-body: clamp(0.875rem, calc(0.84rem + 0.18vw), 1rem);
+  --text-name: clamp(1.875rem, calc(1.7rem + 0.89vw), 2.5rem);
 
-    --color-background: oklch(0.9493 0.007 88.64);
-    --color-foreground: oklch(0.3142 0.006 78.24);
+  --color-indicator: oklch(0.7532 0.1748 158.03);
+  --color-border: oklch(0.4863 0.0187 103.17);
 
-    /* Derived tokens */
-    --color-muted-foreground: color-mix(in oklch, var(--color-foreground) 80%, transparent);
-    --color-inactive-foreground: color-mix(in oklch, var(--color-foreground) 60%, transparent);
-    --color-border-muted: color-mix(in oklch, var(--color-border) 40%, transparent);
-    --color-badge-bg: color-mix(in oklch, var(--color-border) 10%, transparent);
-    --color-header-bg: color-mix(in oklch, var(--color-border) 6%, transparent);
+  --color-background: oklch(0.9493 0.007 88.64);
+  --color-foreground: oklch(0.3142 0.006 78.24);
+
+  /* Derived tokens */
+  --color-muted-foreground: color-mix(
+    in oklch,
+    var(--color-foreground) 80%,
+    transparent
+  );
+  --color-inactive-foreground: color-mix(
+    in oklch,
+    var(--color-foreground) 60%,
+    transparent
+  );
+  --color-border-muted: color-mix(
+    in oklch,
+    var(--color-border) 40%,
+    transparent
+  );
+  --color-badge-bg: color-mix(in oklch, var(--color-border) 10%, transparent);
+  --color-header-bg: color-mix(in oklch, var(--color-border) 6%, transparent);
 }
 
 .dark {
-    --color-background: oklch(0.1822 0 0);
-    --color-foreground: oklch(0.9493 0.007 88.64);
+  --color-background: oklch(0.1822 0 0);
+  --color-foreground: oklch(0.9493 0.007 88.64);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 100%;
 }
