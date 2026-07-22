@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const martianGrotesk = localFont({
   src: [
@@ -81,12 +82,22 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${martianGrotesk.variable} font-martian h-full bg-background text-foreground antialiased`}
+      className={`${martianGrotesk.variable} h-full bg-background font-martian text-body text-foreground antialiased`}
+      suppressHydrationWarning
     >
       <head>
         <meta name="apple-mobile-web-app-title" content="siobaldev" />
       </head>
-      <body>{children}</body>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
