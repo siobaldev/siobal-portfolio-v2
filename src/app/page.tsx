@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import Header from "@/components/header";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
@@ -7,7 +8,9 @@ export default function Home() {
       <Header />
       <div className="mb-28.5 space-y-20 md:space-y-28 md:py-20 lg:flex-1 lg:space-y-36 lg:py-32">
         <About />
-        {/*<Projects />
+        <Projects />
+
+        {/*
         <Technologies />
         <Contact />*/}
       </div>
