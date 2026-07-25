@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { navItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
@@ -29,7 +28,9 @@ export default function DesktopNavigation() {
       const observer = new IntersectionObserver(observerCallback, {
         root: null,
         threshold: 0.2,
-        rootMargin: "0px 0px -50% 0px",
+        // -50% previously broke active-section detection once project cards
+        // grew taller (added preview images) — adjusted to account for that.
+        rootMargin: "0px 0px -20% 0px",
       });
 
       navItems.forEach((item) => {
@@ -81,7 +82,7 @@ export default function DesktopNavigation() {
       <ul className="flex flex-col gap-y-5">
         {navItems.map((item) => (
           <li key={item.href}>
-            <Link
+            <a
               href={item.href}
               onClick={() => handleLinkClick(item.title)}
               className={cn(
@@ -95,7 +96,7 @@ export default function DesktopNavigation() {
               <span className="font-bold text-xs uppercase tracking-wider">
                 {item.title}
               </span>
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
