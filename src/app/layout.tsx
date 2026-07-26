@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: "Minard Siobal — Web Developer & Designer",
     images: [
       {
-        url: `${siteUrl}"/assets/og-image.webp`,
+        url: `${siteUrl}/assets/og-image.webp`,
         width: 1200,
         height: 630,
         alt: "Minard Siobal Portfolio Preview",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Explore Minard Siobal’s Portfolio — Web Developer & Designer",
     description: description,
-    images: [`${siteUrl}"/assets/og-image.webp`],
+    images: [`${siteUrl}/assets/og-image.webp`],
   },
   robots: {
     index: true,
