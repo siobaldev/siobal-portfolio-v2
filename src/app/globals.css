@@ -44,3 +44,20 @@
   padding-inline: 1.5rem;
   max-width: 100%;
 }
+
+@layer components {
+  [data-toast="success"] {
+    --color-toast-border: #22c55e;
+    --color-toast-icon: #22c55e;
+  }
+
+  [data-toast="error"] {
+    --color-toast-border: #ef4444;
+    --color-toast-icon: #ef4444;
+  }
+
+  [data-toast="loading"] {
+    --color-toast-border: var(--color-border-muted);
+    --color-toast-icon: var(--color-foreground);
+  }
+}
