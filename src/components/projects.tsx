@@ -49,20 +49,11 @@ export default function Projects() {
               </div>
             </Link>
 
-            <p className="text-muted-foreground leading-6 lg:leading-6.5">
+            <p className="text-muted-foreground lg:leading-6.5">
               {item.description}
             </p>
 
-            <div className="group/preview relative mt-2 aspect-video w-full overflow-hidden rounded-xl">
-              <Image
-                src={item.image}
-                alt={item.imageAlt}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
-              <ProjectPreview src={item.image} />
-            </div>
+            <ProjectPreview src={item.image} alt={item.imageAlt} />
 
             <Link
               href={item.githubLink}
