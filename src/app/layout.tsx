@@ -69,6 +69,9 @@ export const metadata: Metadata = {
     description: description,
     images: [`${siteUrl}/assets/og-image.webp`],
   },
+  verification: {
+    google: "Zfuql6i4ntFcw5ESM4-gucPqhmam6CqDLr62PBe_TL4",
+  },
   robots: {
     index: true,
     follow: true,
