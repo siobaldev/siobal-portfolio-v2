@@ -8,6 +8,10 @@
   --text-body: clamp(0.875rem, calc(0.84rem + 0.18vw), 1rem);
   --text-name: clamp(1.875rem, calc(1.7rem + 0.89vw), 2.5rem);
 
+  --text-not-found-h1: clamp(1.5rem, 4vw, 2.25rem);
+  --spacing-not-found-404: clamp(15rem, 20vw, 25rem);
+  --spacing-not-found-top: clamp(-25rem, -20vw, -15rem);
+
   --color-indicator: oklch(0.7532 0.1748 158.03);
   --color-border: oklch(0.4863 0.0187 103.17);
 
