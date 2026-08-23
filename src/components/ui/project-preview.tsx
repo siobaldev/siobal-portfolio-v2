@@ -62,7 +62,7 @@ export default function ProjectPreview({
         height="100%"
         image={src}
         colorBack="#f0eee9"
-        colorFront="#33312e"
+        colorFront="#121212"
         originalColors={false}
         type="gooey"
         grid="hex"
