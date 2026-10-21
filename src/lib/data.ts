@@ -37,6 +37,28 @@ export const socialIcons = [
 
 export const projectItems = [
   {
+    title: "Job Log",
+    icon: "/assets/job-log-logo.svg",
+    iconAlt: "job-log-logo",
+    image: "/assets/job-log-image.webp",
+    imageAlt: "Job Log Project Preview Image",
+    description:
+      "A job application tracker that turns pasted job postings into structured records using an LLM. I built the extraction and validation pipeline, AI-generated application emails and cover letters in selectable tones, and a searchable, filterable job list with pagination stored in the URL. Supabase handles auth and row-level security, with private anonymous sessions for visitors and Cloudflare Turnstile to block bots.",
+    projectLink: "https://job-log-app.vercel.app/",
+    githubLink: "https://github.com/siobaldev/job-log",
+    tag: [
+      "Nuxt 4",
+      "Vue 3",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "Zod",
+      "Reka UI",
+      "OpenRouter",
+    ],
+    bgImageColor: "light",
+  },
+  {
     title: "Estatein",
     icon: "/assets/estatein-logo.svg",
     iconAlt: "estatein-logo",
@@ -47,6 +69,7 @@ export const projectItems = [
     projectLink: "https://estatein-hub.vercel.app/",
     githubLink: "https://github.com/siobaldev/estatein",
     tag: ["Next.js", "TypeScript", "Tailwindcss", "Motion", "Zod", "Supabase"],
+    bgImageColor: "dark",
   },
   {
     title: "Spiky Sprouts",
@@ -69,6 +92,7 @@ export const projectItems = [
       "Motion",
       "Zod",
     ],
+    bgImageColor: "dark",
   },
   {
     title: "Vision Twenty",
@@ -88,6 +112,7 @@ export const projectItems = [
       "shadcn/ui",
       "Zustand",
     ],
+    bgImageColor: "dark",
   },
 ];
 
