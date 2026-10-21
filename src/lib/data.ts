@@ -118,6 +118,20 @@ export const projectItems = [
 
 export const mainTechItems = [
   {
+    title: "Nuxt 4",
+    icon: "/assets/technologies/nuxt.svg",
+    alt: "nuxt-logo",
+    description: "Vue Meta-Framework",
+    bgColor: "#00DC82",
+  },
+  {
+    title: "Vue 3",
+    icon: "/assets/technologies/vue.svg",
+    alt: "vue-logo",
+    description: "JavaScript Framework",
+    bgColor: "#41B883",
+  },
+  {
     title: "Next.js",
     icon: "/assets/technologies/nextjs.svg",
     alt: "next.js-logo",
