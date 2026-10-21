@@ -19,9 +19,11 @@ const HalftoneDots = dynamic(
 export default function ProjectPreview({
   src,
   alt,
+  bgImageColor,
 }: {
   src: string;
   alt: string;
+  bgImageColor: string;
 }) {
   const { resolvedTheme } = useTheme();
   const [ready, setReady] = useState(false);
@@ -33,6 +35,9 @@ export default function ProjectPreview({
   }, []);
 
   const isLight = resolvedTheme === "light";
+  const shouldInvert =
+    (isLight && bgImageColor === "dark") ||
+    (!isLight && bgImageColor === "light");
 
   if (!ready) return null;
 
@@ -66,7 +71,7 @@ export default function ProjectPreview({
         originalColors={false}
         type="gooey"
         grid="hex"
-        inverted={isLight}
+        inverted={shouldInvert}
         size={0.5}
         radius={1.25}
         contrast={0.4}

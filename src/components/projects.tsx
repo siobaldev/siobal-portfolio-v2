@@ -53,7 +53,11 @@ export default function Projects() {
               {item.description}
             </p>
 
-            <ProjectPreview src={item.image} alt={item.imageAlt} />
+            <ProjectPreview
+              src={item.image}
+              alt={item.imageAlt}
+              bgImageColor={item.bgImageColor}
+            />
 
             <Link
               href={item.githubLink}
